@@ -11,7 +11,7 @@
 	<groupId>com.beleza1</groupId>
 	<artifactId>beleza1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>beleza1</name>
+	<name>belezaInicio</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
