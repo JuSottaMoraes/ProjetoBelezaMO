@@ -1,17 +1,12 @@
+<header th:insert="header.html"/>
 
-<!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
-        <head>  
-                <title> Loguin</title>  
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-            </head> 
-        <body> 
-                <h1>Faça seu loguin </h1> 
-                <form th:action="@{/cadastro-cliente}" th:object="${cliente}" method="POST"> 
-                        <p>Loguin: <input type="text" th:field="*{loguin}" /> </p> 
-                        <p>Senha: <input type="text" th:field="*{senha}" /></p> 
-                    
-                        <p><input type="submit" value="Cadastrar" /></p> 
-                    </form> 
-            </body> 
-</html> 
+<div class=" container">
+            <h1>Faça seu loguin </h1> 
+            <form th:action="@{/cadastro-cliente}" th:object="${cliente}" method="POST"> 
+                    <p>Loguin: <input type="text" th:field="*{loguin}" /> </p> 
+                    <p>Senha: <input type="text" th:field="*{senha}" /></p> 
+                
+                    <p><input type="submit" value="Cadastrar" /></p> 
+                </form> 
+</div>
+<footer th:insert="footer.html"/>

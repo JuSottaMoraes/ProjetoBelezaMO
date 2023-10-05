@@ -1,17 +1,14 @@
+<header th:insert="header.html"/>
 
-<!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
-        <head>  
-                <title>Cadastro de Cliente</title>  
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-            </head> 
-        <body> 
-                <h1>Cadastro de clientes</h1> 
-                <form th:action="@{/cadastro-cliente}" th:object="${cliente}" method="POST"> 
-                        <p>Nome: <input type="text" th:field="*{nome}" /> </p> 
-                        <p>Sobrenome: <input type="text" th:field="*{sobrenome}" /></p> 
-                        <p>Idade: <input type="text" th:field="*{idade}" /></p> 
-                        <p><input type="submit" value="Cadastrar" /></p> 
-                    </form> 
-            </body> 
-</html> 
+<div class=" container">
+        
+            <h1>Cadastro de clientes</h1> 
+            <form th:action="@{/cadastro-cliente}" th:object="${cliente}" method="POST"> 
+                    <p>Nome: <input type="text" th:field="*{nome}" /> </p> 
+                    <p>Sobrenome: <input type="text" th:field="*{sobrenome}" /></p> 
+                    <p>Idade: <input type="text" th:field="*{idade}" /></p> 
+                    <p><input type="submit" value="Cadastrar" /></p> 
+                </form> 
+        
+</div>
+<footer th:insert="footer.html"/>
