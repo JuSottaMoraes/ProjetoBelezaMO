@@ -46,6 +46,9 @@ public class ClienteService {
         clienteJPA.deleteById(cliente.getId());
         return cliente;
     }
+      public List<ClienteEntity> listarMaiorIdade() {
+        return clienteJPA.findAll();
+    }
 }
  
 

@@ -1,0 +1,24 @@
+<header th:insert="header.htm"/>
+
+<div class="container">
+    <h1>Atualização de clientes</h1>
+
+
+            <div class="container"> 
+                    <h1>Gerenciamento de clientes 
+                        <hr> 
+                        <h2>Atualizar 
+                            <form action="#" th:action="@{/salvarCliente}" th:object="${clientes}" method="POST"> 
+                                    <input type="text" th:field="*{nome}" placeholder="Insira um  nome" class="form-control mb-4 col-4"> 
+                                    <input type="text" th:field="*{sobrenome}" placeholder="Insira um sobrenome" class="form-control mb-4 col-4"> 
+                                    <input type="text" th:field="*{idade}" placeholder="Insira uma idade" class="form-control mb-4 col-4">  
+                                    <input type="hidden" th:field="*{id}" /> 
+                                    <button type="submit" class="btn btn-info col-2"> Atualizar</button> 
+                                </form>         
+                            <hr> 
+                            <a th:href="@{/}"> Retornar</a> 
+                        </div> 
+                </div>
+                    </body> 
+
+                <footer th:insert="footer.html"/>

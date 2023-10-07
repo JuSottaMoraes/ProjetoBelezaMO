@@ -2,9 +2,9 @@
 
 <div class=" container">
             <h1>Faça seu loguin </h1> 
-            <form th:action="@{/cadastro-cliente}" th:object="${cliente}" method="POST"> 
-                    <p>Loguin: <input type="text" th:field="*{loguin}" /> </p> 
-                    <p>Senha: <input type="text" th:field="*{senha}" /></p> 
+            <form th:action="@{/cadastro-cliente}" method="POST"> 
+                    <p>Loguin: <input type="text" /> </p> 
+                    <p>Senha: <input type="text" /></p> 
                 
                     <p><input type="submit" value="Cadastrar" /></p> 
                 </form> 

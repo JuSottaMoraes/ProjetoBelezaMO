@@ -16,5 +16,12 @@ public class ListaCliente {
         return lista;
     }
 
+    public static ArrayList<ClienteEntity> excluir(ClienteEntity cliente) {
+        return lista;
+    }
 
+    public static ArrayList<ClienteEntity> atualizar(ClienteEntity filme) {
+        return lista;
+    }
 }
+
